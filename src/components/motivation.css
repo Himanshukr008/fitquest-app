@@ -1,0 +1,75 @@
+.motivate {
+    padding: 15px;
+    max-width: 1110px;
+    margin: 20px auto;
+    border: 2px solid var(--border-color);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.motivation{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+h2{
+    margin-left: 200px;
+}
+
+.mcard {
+  min-width: 250px;
+  max-width: 300px;
+  background-color: rgb(31 42 64);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: transform 2s ease-in-out;
+  /* border: 2px solid rgb(7, 162, 223) ; */
+}
+
+.mcard img:hover{
+    cursor: pointer;
+    transform: scale(2px);
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.1);
+    border-color: var(--primary-color);
+}
+
+
+/* Ensures image fills the card */
+.mcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Optional: Style for the audio player */
+.mcard audio {
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+.mcard audio:hover{
+    opacity: 1;
+}
+@media (max-width:432px) {
+    .motivate{
+        display: block;
+        max-width: 375px;
+        justify-content: center;
+    }
+    .mcard{
+        margin: 20px;
+        overflow-y: scroll;
+    }
+    h2{
+        margin-left: 30px;
+    }
+}

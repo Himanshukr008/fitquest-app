@@ -1,0 +1,22 @@
+.quest-list-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.no-quests-message {
+  text-align: center;
+  padding: 50px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  background-color: var(--bg-light);
+  border-radius: 16px;
+}
